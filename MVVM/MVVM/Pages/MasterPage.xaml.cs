@@ -18,8 +18,8 @@ namespace MVVM.Pages
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            App.Master = this;
             App.Navigator = Navigator;
         }
-
     }
 }
