@@ -1,9 +1,4 @@
 ﻿using MVVM.Pages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MVVM.Services
 {
@@ -33,6 +28,11 @@ namespace MVVM.Services
                 default:
                     break;
             }
+        }
+
+        internal void SetMainPage()
+        {
+            App.Current.MainPage = new MasterPage();
         }
     }
 }

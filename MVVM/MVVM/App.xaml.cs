@@ -11,7 +11,7 @@ namespace MVVM
         public App()
         {
             InitializeComponent();
-            MainPage = new MasterPage();
+            MainPage = new WelcomePage();
         }
 
         protected override void OnStart()

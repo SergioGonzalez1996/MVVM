@@ -36,6 +36,13 @@ namespace MVVM.ViewModels
         {
             navigationService.Navigate(pageName);
         }
+
+        public ICommand StartCommand { get { return new RelayCommand(Start); } }
+
+        private void Start()
+        {
+            navigationService.SetMainPage();
+        }
         #endregion
 
         #region Methods
